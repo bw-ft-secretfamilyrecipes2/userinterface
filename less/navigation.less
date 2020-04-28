@@ -1,11 +1,25 @@
 nav{
-    font-size:3rem;
-    
-    .btn{
-        .button(@btnbg, 10%, 10%, @h2font, @scolor, "space-around", "center")
-    }
+    max-width: 100%;
+    font-size:6rem;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    section{
+        max-width: 50%;
+        margin: 2%;
+        //
+        // // flex-wrap: wrap;
+        // flex-direction: row;
+        // // justify-content: space-around;
 
-    a{
-        text-decoration: none;
-    }
+        a{
+            text-decoration: none;
+            //justify-content: space-between;
+        }
+           
+    }     
 }
+
+.btn{
+            .button(@btnbg, 10%, 20%, @h1font, @scolor, space-evenly, center);
+        }
