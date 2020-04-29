@@ -102,6 +102,16 @@ h1 {
   font-family: 'Akronim', cursive;
   color: #E25822;
 }
+@media (max-width:800px) {
+  h1 {
+    font-size: 8rem;
+  }
+}
+@media (max-width:500px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
 h2 {
   font-size: 7rem;
   font-family: 'Hanalei', cursive;
@@ -116,10 +126,20 @@ div {
 }
 nav {
   max-width: 100%;
-  font-size: 6rem;
+  font-size: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width:800px) {
+  nav {
+    font-size: 4rem;
+  }
+}
+@media (max-width:500px) {
+  nav {
+    font-size: 3rem;
+  }
 }
 nav section {
   max-width: 50%;
@@ -131,7 +151,7 @@ nav section a {
 .btn {
   background-color: #1799B5;
   border-radius: 10%;
-  padding: 20%;
+  padding: 10%;
   font-family: 'Akronim', cursive;
   color: seashell;
   display: flex;

@@ -1,25 +1,31 @@
 nav{
     max-width: 100%;
-    font-size:6rem;
-     display: flex;
+    font-size:5rem;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+
+     @media @tablet {
+        font-size: 4rem;
+    }
+
+    @media @mobile {
+        font-size: 3rem;
+    }
+
+   
     section{
         max-width: 50%;
         margin: 2%;
-        //
-        // // flex-wrap: wrap;
-        // flex-direction: row;
-        // // justify-content: space-around;
-
+      
         a{
             text-decoration: none;
-            //justify-content: space-between;
+            
         }
            
     }     
 }
 
 .btn{
-            .button(@btnbg, 10%, 20%, @h1font, @scolor, space-evenly, center);
+            .button(@btnbg, 10%, 10%, @h1font, @scolor, space-evenly, center);
         }
