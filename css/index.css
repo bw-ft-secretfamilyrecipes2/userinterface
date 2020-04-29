@@ -116,8 +116,23 @@ h2 {
   font-size: 7rem;
   font-family: 'Hanalei', cursive;
 }
+@media (max-width:800px) {
+  h2 {
+    font-size: 6rem;
+  }
+}
+@media (max-width:500px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
 div {
-  font-size: 2rem;
+  font-size: 3.5rem;
+}
+@media (max-width:500px) {
+  div {
+    font-size: 2.5rem;
+  }
 }
 .container {
   max-width: 1000px;
@@ -163,4 +178,56 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.rside {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transform: rotate(15deg);
+  margin: 5%;
+}
+@media (max-width:500px) {
+  .rside {
+    justify-content: center;
+    align-content: center;
+    margin: 10%;
+    transform: rotate(10deg);
+  }
+}
+.lside {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transform: rotate(-15deg);
+  margin: 5%;
+}
+@media (max-width:500px) {
+  .lside {
+    justify-content: center;
+    align-content: center;
+    margin: 10%;
+  }
+}
+.ncard {
+  background-color: lightcoral;
+  border-radius: 10%;
+  padding: 2%;
+  color: seashell;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 50%;
+}
+@media (max-width:500px) {
+  .ncard {
+    max-width: 80%;
+  }
+}
+img {
+  max-width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
 }

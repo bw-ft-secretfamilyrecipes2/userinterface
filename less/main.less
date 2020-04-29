@@ -4,3 +4,51 @@ header{
     align-items: center;
     flex-direction: column;
 }
+
+.rside{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transform: rotate(15deg);
+    margin: 5%;
+
+    @media @mobile {
+        justify-content: center;
+        align-content: center;
+        margin: 10%;
+        transform: rotate(10deg);
+    }
+
+}
+
+.lside{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transform: rotate(-15deg);
+    margin: 5%;
+
+    @media @mobile {
+        justify-content: center;
+        align-content: center;
+        margin: 10%;
+    }
+}
+
+.ncard{
+    .card(@cardbg, 10%, 2%, @scolor, center, center);
+    flex-direction: column;
+    max-width: 50%;
+
+    @media @mobile {
+        max-width: 80%;
+    }
+}
+
+img{
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
