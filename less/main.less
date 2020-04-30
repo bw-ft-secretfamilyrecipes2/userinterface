@@ -7,6 +7,7 @@ header{
 
 .rside{ //right side
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-end;
     transform: rotate(15deg);
@@ -29,6 +30,7 @@ header{
 
 .lside{ //left side
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     transform: rotate(-15deg);
@@ -50,6 +52,7 @@ header{
 .ncard{
     .card(@cardbg, 10%, 2%, @scolor, center, center);
     flex-direction: column;
+    flex-wrap: wrap;
     max-width: 50%;
 
     @media @tablet {
@@ -64,11 +67,12 @@ header{
 a{
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
     img{
-        max-width: 30%;
+        max-width: 40%;
         display: flex;
         justify-content: center;
         align-items: center;
