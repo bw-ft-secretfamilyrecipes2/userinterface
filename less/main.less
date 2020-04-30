@@ -5,12 +5,18 @@ header{
     flex-direction: column;
 }
 
-.rside{
+.rside{ //right side
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     transform: rotate(15deg);
     margin: 5%;
+
+    @media @tablet {
+        margin: 8%;
+        justify-content: center;
+        align-content: center;
+    }
 
     @media @mobile {
         justify-content: center;
@@ -21,17 +27,23 @@ header{
 
 }
 
-.lside{
+.lside{ //left side
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     transform: rotate(-15deg);
     margin: 5%;
 
+    @media @tablet {
+        justify-content: center;
+        align-content: center;
+        margin: 12%;
+    }
+
     @media @mobile {
         justify-content: center;
         align-content: center;
-        margin: 10%;
+        margin: 15%;
     }
 }
 
@@ -39,6 +51,10 @@ header{
     .card(@cardbg, 10%, 2%, @scolor, center, center);
     flex-direction: column;
     max-width: 50%;
+
+    @media @tablet {
+        max-width: 65%;
+    }
 
     @media @mobile {
         max-width: 80%;
