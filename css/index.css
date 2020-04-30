@@ -224,7 +224,12 @@ header {
     max-width: 80%;
   }
 }
-img {
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a img {
   max-width: 30%;
   display: flex;
   justify-content: center;
