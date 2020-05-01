@@ -144,6 +144,16 @@ div {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width:800px) {
+  .index {
+    padding: 2%;
+  }
+}
+@media (max-width:500px) {
+  .index {
+    padding: 2%;
+  }
+}
 nav {
   max-width: 100%;
   font-size: 5rem;
